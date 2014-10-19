@@ -100,7 +100,7 @@ class Weapon
   }
 
   def initialize(weapon_name)
-    @weapons = weapon_name
+    @weapon_name = weapon_name
   end
 
   def weapon_cost(weapon_name)

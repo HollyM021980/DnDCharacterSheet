@@ -4,7 +4,7 @@ require_relative '../../lib/models/character_race'
 describe CharacterRace do
 
   it "should generate a CharacterRace object" do
-    char_race = CharacterRace.new
+    char_race = CharacterRace.new("Hill Dwarf")
 
     expect { char_race.should be_a CharacterRace }
   end
