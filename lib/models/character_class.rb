@@ -1,8 +1,3 @@
-require 'pry'
-
-# This will contain all of the information to create a
-# character of a specific class
-
 class CharacterClass
 
   ABILITY_DEFAULTS = {}
@@ -48,6 +43,9 @@ class CharacterClass
   }
 
 
+  def initialize(name)
+    @character_class = name
+  end
 
   # Input:  none
   # Return: Array of class name strings

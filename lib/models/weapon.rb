@@ -1,4 +1,4 @@
-class Weapons
+class Weapon
 
   WEAPONS = {
     "Simple Melee Weapons" => {
@@ -99,12 +99,38 @@ class Weapons
     "Martial Ranged Weapons" => {},
   }
 
+  def initialize(weapon_name)
+    @weapons = weapon_name
+  end
+
+  def weapon_cost(weapon_name)
+  end
+
+  def weapon_damage(weapon_name)
+  end
+
+  def weapon_weight(weapon_name)
+  end
+
+  def weapon_properties(weapon_name)
+
+  end
+
+  # TODO: make these class method
   def assemble_weapon_types
     WEAPONS.keys
   end
 
   def assemble_weapon_names(type)
     WEAPONS[type].keys.to_s
+  end
+
+  def assemble_weapon_details(weapon_name)
+    weapon_details = Hash.new()
+    WEAPONS.each_key do | key |
+      return nil unless WEAPONS[key].has_key?(weapon_name)
+      return WEAPONS[key][weapon_name]
+    end
   end
 
 end

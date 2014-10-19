@@ -5,6 +5,10 @@ class CharacterRace
           "Halfling" => {subraces:[]}
         }
 
+  def initialize(race)
+    @character_race = race
+  end
+
   def assemble_race_names
     race_names = []
     RACES.each_key do | key |

@@ -1,4 +1,5 @@
-require 'character_race'
+require 'spec_helper'
+require_relative '../../lib/models/character_race'
 
 describe CharacterRace do
 
