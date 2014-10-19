@@ -20,4 +20,6 @@ group :development, :test do
   gem 'spring', group: :development
   gem 'pry-rails', group: [:development, :test]
   gem 'pry-byebug', group: [:development, :test]
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
 end

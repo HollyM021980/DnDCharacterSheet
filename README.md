@@ -9,11 +9,30 @@ There are two types of users: admin and player.  If the term "user" will be used
 
 # DataModel
 
-## Character
+## Abilities
 
+## Character
+This becomes the collection of data that defines a character in Dungeons and Dragons.
+* Class (has one)
+* Race (has one)
+* Name
+* Gender
+* Age
+* Weapon (has many)
+* Armor (has many)
+* Ability (has many)
+  * Strength
+  * Dexterity
+  * Constitution
+  * Intelligence
+  * Wisdom
+  * Charisma
 
 ## User
-
+The User can be either a player or an admin.  Fields;
+* Name (String)
+* Email (String)
+* Admin (Boolean)
 
 ## User Stories
 - Sign in, sign up and log out
@@ -61,7 +80,9 @@ There are two types of users: admin and player.  If the term "user" will be used
   - New Character (edit page or welcome page)
     - Checks that don't allow changes unless the required info is filled in first. Below is the order in which changes will be allowed:
       - Ability score roll comes first
-      - Enables choice of Class and Race
+      - Enables choice of Race
+      - Enables choice of Class
+      - Enables choice of Alignment
       - Fills in with starter package info and enables all fields
   - Edit Character
     - Due to inline editing functionality, a temporary copy will be created to allow revert prior to final save
@@ -71,15 +92,18 @@ There are two types of users: admin and player.  If the term "user" will be used
     - The system will have the ability to do dice rolls as appropriate
       - Ability
       - Within elements of the edit page
+  - Explicit exclusions
+    - Spells and scoring for spells/abilities
+    - Reduced characters
 
 ## Task list
-- [] Create user stories
-- [] Define data model
-- [] Initial Setup
-  - [] New app & create db
-  - [] Init git & create github repo & do initial commit & push
-  - [] Create silly welcome page so you have something to look at when you run
-  - [] Init Heroku & push app to Heroku
+- [X] Create user stories
+- [X] Initial Setup
+  - [X] New app & create db
+  - [X] Init git & create github repo & do initial commit & push
+  - [X] Create silly welcome page so you have something to look at when you run
+  - [X] Init Heroku & push app to Heroku
+- [] Define initial data model
 - [] Sign-in/sign-up/log out using devise
 - [] Header and footer
   - [] Header navigation sign in, sign up, log out, Home
