@@ -8,6 +8,7 @@ It is deployed to Heroku here: http://arcane-cove-7551.herokuapp.com/
 There are two types of users: admin and player.  If the term "user" will be used if something applies to both admin and player.
 
 # DataModel
+The majority of the data will be encapsulated in library models. Currently, only User and Character will be stored in the database.
 
 ## Abilities
 
@@ -15,10 +16,14 @@ There are two types of users: admin and player.  If the term "user" will be used
 This becomes the collection of data that defines a character in Dungeons and Dragons.
 * Class (has one)
 * Race (has one)
+* Alignment
+* Size
+* Speed
 * Name
 * Gender
 * Age
-* Weapon (has many)
+* Level
+* Weapons (has many)
 * Armor (has many)
 * Ability (has many)
   * Strength
@@ -27,6 +32,18 @@ This becomes the collection of data that defines a character in Dungeons and Dra
   * Intelligence
   * Wisdom
   * Charisma
+
+
+## Race
+* Ability score increase
+* Age
+* Alignment
+* Size
+* Speed
+
+## Class
+* ??
+* ??
 
 ## User
 The User can be either a player or an admin.  Fields;
@@ -79,22 +96,23 @@ The User can be either a player or an admin.  Fields;
     - The user will be able to edit sheet attributes inline w/o navigation to other pages/forms
   - New Character (edit page or welcome page)
     - Checks that don't allow changes unless the required info is filled in first. Below is the order in which changes will be allowed:
-      - Ability score roll comes first
-      - Enables choice of Race
+      - First choose Race
       - Enables choice of Class
+      - Enables ability
       - Enables choice of Alignment
+      - Enables choice of Weapons
       - Fills in with starter package info and enables all fields
   - Edit Character
     - Due to inline editing functionality, a temporary copy will be created to allow revert prior to final save
     - Will contain a final save navigation element
       - Final save will overwrite the existing data and delete the temporary copy
   - Dice rolls
-    - The system will have the ability to do dice rolls as appropriate
-      - Ability
-      - Within elements of the edit page
+    - The system will have the ability to do dice rolls on the character sheet page by specifying the following:
+      - dice roll (ie: 1d20)
+      - modifier (ie + 2)
   - Explicit exclusions
     - Spells and scoring for spells/abilities
-    - Reduced characters
+    - Reduced data set for character classes, races and weapons and capabilities
 
 ## Task list
 - [X] Create user stories
@@ -103,19 +121,34 @@ The User can be either a player or an admin.  Fields;
   - [X] Init git & create github repo & do initial commit & push
   - [X] Create silly welcome page so you have something to look at when you run
   - [X] Init Heroku & push app to Heroku
-- [] Define initial data model
+- [X] Define and document initial data model
+- [X] Pull in library models from week 1 miniproject & revise to fit this application
+- [] Seed database with existing models
 - [] Sign-in/sign-up/log out using devise
+  - [] Seed db with users
 - [] Header and footer
   - [] Header navigation sign in, sign up, log out, Home
   - [] Header and footer styles
+- [] Character db model
+  - [] Generate db model
+  - [] Seed database
+  - [] Create controller
 - [] Add unstyled listing page elements, reusable for "My character sheets"
   - [] Each character sheet listed will only contain viewing (non-edit mode) option
   - [] Add "My character sheets" navigation element to user-specific unstyled listing page
   - [] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
 - [] Style listing page & non-edit viewing page
+- [] Add edit character page
+- [] Add New character navigation & base functionality
+  - [] Creates new character sheet on edit page
+  - [] Implement restrictions and appropriate validation and error messaging as character is defined (Race before Class before etc..)
+- [] Style edit page
+
+## If have time
+- [] More tests!!
+- [] Expand data set
+- Dice rolls within elements of the edit page
 - [] Add clone/copy ability
-  - [] Copy navigates to unstyled edit page
-  - [] Style edit page
-- [] Add New character navigation
-  - [] Displays empty edit page
+  - [] Copy navigates to edit page
+
 
