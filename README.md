@@ -123,7 +123,6 @@ The User can be either a player or an admin.  Fields;
   - [X] Init Heroku & push app to Heroku
 - [X] Define and document initial data model
 - [X] Pull in library models from week 1 miniproject & revise to fit this application
-- [] Seed database with existing models
 - [] Sign-in/sign-up/log out using devise
   - [] Seed db with users
 - [] Header and footer
@@ -147,8 +146,9 @@ The User can be either a player or an admin.  Fields;
 ## If have time
 - [] More tests!!
 - [] Expand data set
-- Dice rolls within elements of the edit page
+- [] Dice rolls within elements of the edit page
 - [] Add clone/copy ability
   - [] Copy navigates to edit page
+
 
 
