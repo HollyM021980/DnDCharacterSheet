@@ -1,4 +1,5 @@
 class AbilityScores
+  attr_accessor :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma
 
   def initialize(str:, dex:, con:, int:, wis:, cha:)
     @strength = str
@@ -8,7 +9,5 @@ class AbilityScores
     @wisdom = wis
     @charisma = cha
   end
-
-
 
 end
