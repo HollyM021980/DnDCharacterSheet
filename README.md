@@ -125,9 +125,9 @@ The User can be either a player or an admin.  Fields;
 - [X] Pull in library models from week 1 miniproject & revise to fit this application
 - [X] Sign-in/sign-up/log out using devise
 - [] Seed db with users
-- [] Header and footer
-  - [] Header navigation sign in, sign up, log out, Home
-  - [] Header and footer styles
+- [X] Header and footer
+  - [X] Header navigation sign in, sign up, log out, Home
+  - [X] Header and footer styles
 - [] Sign in, sign up styles
 - [] Character db model
   - [] Generate db model
@@ -137,6 +137,7 @@ The User can be either a player or an admin.  Fields;
   - [] Each character sheet listed will only contain viewing (non-edit mode) option
   - [] Add "My character sheets" navigation element to user-specific unstyled listing page
   - [] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
+- [] Add scss to allow use of the custom font
 - [] Style listing page & non-edit viewing page
 - [] Add edit character page
 - [] Add New character navigation & base functionality
