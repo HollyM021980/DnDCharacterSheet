@@ -1,6 +1,6 @@
 == README
 
-Welcome to Holly's Online version of a Dungeons and Dragons Character Sheet!
+Welcome to Holly's Online version of a Dungeons and Dragons Character Sheet! This is based version 3.5.
 
 # General
 It is deployed to Heroku here: http://arcane-cove-7551.herokuapp.com/
