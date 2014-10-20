@@ -1,7 +1,32 @@
   /* GLOBAL STYLES
   -------------------------------------------------- */
+  @font-face {
+      font-family: 'Vecna';
+      src: url('Vecna.otf');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Vecna';
+      src: url('Vecna-Italic.otf');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Vecna';
+      src: url('Vecna-Bold.otf');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Vecna';
+      src: url('Vecna-BoldItalic.otf');
+      font-weight: bold;
+      font-style: italic;
+  }
+
   * {
-    font-family: Vecna, Arial, Geneva, Helvetica, sans-serif;
+    font-family: Vecna, 'Droid Serif', Georgia, serif;
   }
 
   /* Padding below the footer and lighter body text */
