@@ -12,6 +12,6 @@ describe CharacterClass do
     # class_names = FactoryGirl.build(:character_class).assemble_class_names
     class_names = CharacterClass.new("Wizard").assemble_class_names
     expect {class_names.should be_an_instance_of Array}
-    expect {class_names.should == ["Cleric", "Fighter", "Rogue", "Wizard"]}
+    expect {class_names.should == ["Cleric", "Fighter", "Rogue", "Wizard", "Bard", "Barbarian"]}
   end
 end

@@ -97,6 +97,7 @@ class Weapon
       },
     "Martial Melee Weapons" => {},
     "Martial Ranged Weapons" => {},
+    "Exotic Weapons" => {},
   }
 
   def initialize(weapon_name)
