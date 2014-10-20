@@ -145,9 +145,10 @@ The User can be either a player or an admin.  Fields;
   - [] Implement restrictions and appropriate validation and error messaging as character is defined (Race before Class before etc..)
 - [] Style edit page
 - [] Tweak style on license page
-- [] Add username to devise
+- [] Add username to User model
   - [] Modify sign up, edit profile to add user name.  Still use email as main key for login.
   - [] Tweak pages to display user name
+- [] Add admin flag to User model
 
 ## If have time
 - [] More tests!!
