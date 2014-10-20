@@ -123,11 +123,12 @@ The User can be either a player or an admin.  Fields;
   - [X] Init Heroku & push app to Heroku
 - [X] Define and document initial data model
 - [X] Pull in library models from week 1 miniproject & revise to fit this application
-- [] Sign-in/sign-up/log out using devise
-  - [] Seed db with users
+- [X] Sign-in/sign-up/log out using devise
+- [] Seed db with users
 - [] Header and footer
   - [] Header navigation sign in, sign up, log out, Home
   - [] Header and footer styles
+- [] Sign in, sign up styles
 - [] Character db model
   - [] Generate db model
   - [] Seed database
@@ -142,6 +143,7 @@ The User can be either a player or an admin.  Fields;
   - [] Creates new character sheet on edit page
   - [] Implement restrictions and appropriate validation and error messaging as character is defined (Race before Class before etc..)
 - [] Style edit page
+- [] Tweak style on license page
 
 ## If have time
 - [] More tests!!
@@ -149,6 +151,10 @@ The User can be either a player or an admin.  Fields;
 - [] Dice rolls within elements of the edit page
 - [] Add clone/copy ability
   - [] Copy navigates to edit page
+
+## Credits
+- Images
+  - http://photobucket.com/images/dungeons%20and%20dragons
 
 
 

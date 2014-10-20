@@ -19,7 +19,7 @@ module DnDCharacterBuilder
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
-
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
