@@ -128,7 +128,7 @@ The User can be either a player or an admin.  Fields;
 - [X] Header and footer
   - [X] Header navigation sign in, sign up, log out, Home
   - [X] Header and footer styles
-- [] Sign in, sign up styles
+- [X] Sign in, sign up styles
 - [] Character db model
   - [] Generate db model
   - [] Seed database
@@ -151,7 +151,8 @@ The User can be either a player or an admin.  Fields;
 - [] Expand data set
 - [] Dice rolls within elements of the edit page
 - [] Add clone/copy ability
-  - [] Copy navigates to edit page
+  - [] Copy sheet navigates to edit page
+- [] Use modal popup/dialog for license text.
 
 ## Credits
 - Images
