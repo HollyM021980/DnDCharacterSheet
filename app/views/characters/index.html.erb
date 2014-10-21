@@ -2,19 +2,19 @@
   <div class="row">
     <% @characters.each do |character| %>
       <div class="col-md-3">
-        Name: <%= character.name %>
+        Name: <%= best_in_place character, :name %>
       </div>
       <div class="col-md-2">
-        Age: <%= character.age.to_s %>
+        Age: <%= best_in_place character, :age %>
       </div>
       <div class="col-md-2">
-        Gender: <%= character.gender %>
+        Gender: <%= best_in_place character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
       </div>
       <div class="col-md-2">
-        Level: <%= character.level %>
+        Level: <%= best_in_place character, :level %>
       </div>
       <div class="col-md-2">
-        Public?: <%= character.public.to_s %>
+        <%= best_in_place character, :public, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
       </div>
     <% end %>
   </div>
