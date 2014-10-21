@@ -141,7 +141,7 @@ The User can be either a player or an admin.  Fields;
   - [X] On main index page, allow edit on view page if belongs to user logged in
   - [X] Both of the above will navigate to a characater "show page"
 - [X] Modify character listing so doesn't allow inline editing (maybe unless it belongs to them - concern on welcome index page).
-- [] Add character sheet fields to the view/edit page
+- [X] Add editable character sheet fields to the view/edit page
 - [] Convert remaining non-db models to db-based models
   - [] Class
   - [] Dwarf (race too??)
