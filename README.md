@@ -129,24 +129,24 @@ The User can be either a player or an admin.  Fields;
   - [X] Header navigation sign in, sign up, log out, Home
   - [X] Header and footer styles
 - [X] Sign in, sign up styles
-- [] Character db model
-  - [] Generate db model
-  - [] Seed database
-  - [] Create controller
-- [] Filter main index page by public sheets, show only subset of fields
+- [X] Character db model
+  - [X] Generate db model
+  - [X] Seed database
+  - [X] Create controller
+- [X] Add abilities to the main character model
+- [] Filter main index page by public flag, show only subset of fields (user, char name, age)
   - [] On main index page add ability to view a specific character sheet
   - [] On main index page, allow edit on view page if belongs to user logged in
   - [] Both of the above will navigate to a characater "show page"
 - [] Filter Character list page by user.
-- [X] Add abilities to the main character model
 - [] Convert non-db models to db-based models
   - [] Class
   - [] Dwarf
-
 - [] Add unstyled listing page elements, reusable for "My character sheets"
   - [] Each character sheet listed will only contain viewing (non-edit mode) option
   - [] Add "My character sheets" navigation element to user-specific unstyled listing page
   - [] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
+- [] Add fields to character sheet listing index pages (Class name, Race name)
 - [] Add scss to allow use of the custom font
 - [] Style listing page & non-edit viewing page
 - [] Add edit character page
