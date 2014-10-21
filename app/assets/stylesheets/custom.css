@@ -29,6 +29,10 @@
     font-family: Vecna, 'Lobster Two', 'Droid Serif', Georgia, serif;
   }
 
+  /* TODO: Need to make the notice stand out. */
+  .notice-heading {
+
+  }
   /* Padding below the footer and lighter body text */
   body {
     padding-bottom: 40px;
