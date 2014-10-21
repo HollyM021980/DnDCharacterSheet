@@ -1,8 +1,8 @@
 class CharactersController < ApplicationController
-  before_action :set_character, only: [ :edit, :show, :update ]
+  before_action :set_character, only: [:edit, :show, :update ]
 
   def index
-    @characters = Character.all
+    @characters = Character.where("user_id = ?", current_user)
   end
 
 

@@ -142,6 +142,7 @@ The User can be either a player or an admin.  Fields;
 - [] Convert non-db models to db-based models
   - [] Class
   - [] Dwarf
+- [] Define and add validations as needed
 - [] Add unstyled listing page elements, reusable for "My character sheets"
   - [] Each character sheet listed will only contain viewing (non-edit mode) option
   - [] Add "My character sheets" navigation element to user-specific unstyled listing page
