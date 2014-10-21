@@ -5,7 +5,7 @@
         <% if user_signed_in? %>
             <%= "Mine? " + ((character.user_id == current_user.id) ? "Yes" : "No") %>
         <% end %>
-        </div>
+      </div>
       <div class="col-md-2">
         Name: <%= best_in_place_if character_editable?(character), character, :name %>
       </div>
