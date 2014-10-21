@@ -14,7 +14,7 @@
         Level: <%= best_in_place character, :level %>
       </div>
       <div class="col-md-2">
-        <%= best_in_place character, :public, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
+        <%= best_in_place character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
       </div>
     <% end %>
   </div>

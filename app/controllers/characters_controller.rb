@@ -5,6 +5,9 @@ class CharactersController < ApplicationController
     @characters = Character.where("user_id = ?", current_user)
   end
 
+  def show
+  end
+
 
   private
   def set_character

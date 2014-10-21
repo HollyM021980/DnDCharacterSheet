@@ -140,9 +140,10 @@ The User can be either a player or an admin.  Fields;
   - [] On main index page add ability to view a specific character sheet
   - [] On main index page, allow edit on view page if belongs to user logged in
   - [] Both of the above will navigate to a characater "show page"
-- [] Convert non-db models to db-based models
+- [] Modify character listing so doesn't allow inline editing (maybe unless it belongs to them - concern on welcome index page).
+- [] Convert remaining non-db models to db-based models
   - [] Class
-  - [] Dwarf
+  - [] Dwarf (race too??)
 - [] Define and add validations as needed
 - [] Add unstyled listing page elements, reusable for "My character sheets"
   - [] Each character sheet listed will only contain viewing (non-edit mode) option

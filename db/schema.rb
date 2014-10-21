@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20141021142007) do
     t.integer  "age"
     t.string   "gender"
     t.integer  "level"
-    t.boolean  "public"
+    t.boolean  "public_flag"
     t.integer  "user_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false

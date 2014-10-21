@@ -1,4 +1,4 @@
-class CharacterClass
+class AllCharacterClasses
 
   ABILITY_DEFAULTS = {}
 

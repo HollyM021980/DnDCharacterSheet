@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <% @characters.each do |character| %>
+      <div class="col-md-2">
+        Name: <%= character.name %>
+      </div>
+      <div class="col-md-2">
+        Age: <%= character.age %>
+      </div>
+      <div class="col-md-2">
+        Gender: <%= character.gender %>
+      </div>
+      <div class="col-md-2">
+        Level: <%= character.level %>
+      </div>
+      <div class="col-md-2">
+        <%= character.public_flag.to_s %>
+      </div>
+      <div class="col-md-2">
+        <%= link_to "View", character_path(character) %>
+      </div>
+    <% end %>
+  </div>
+</div>
