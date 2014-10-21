@@ -134,11 +134,12 @@ The User can be either a player or an admin.  Fields;
   - [X] Seed database
   - [X] Create controller
 - [X] Add abilities to the main character model
-- [] Filter main index page by public flag, show only subset of fields (user, char name, age)
+- [X] Filter Character list page by user.
+- [X] Show My Character Sheets in nav ONLY if user logged in
+- [X] Filter main index page by public flag, show only subset of fields (user, char name, age)
   - [] On main index page add ability to view a specific character sheet
   - [] On main index page, allow edit on view page if belongs to user logged in
   - [] Both of the above will navigate to a characater "show page"
-- [] Filter Character list page by user.
 - [] Convert non-db models to db-based models
   - [] Class
   - [] Dwarf
