@@ -18,7 +18,6 @@
           <ul class="nav navbar-nav">
             <li><%= link_to 'Home', root_path %></li>
             <li><%= (link_to 'My Character Sheets', characters_path) if user_signed_in? %></li>
-            <%= render 'layouts/nav_dropdown' %>
           </ul>
           <p class="navbar-text pull-right">
           <%= render 'shared/login_items' %>

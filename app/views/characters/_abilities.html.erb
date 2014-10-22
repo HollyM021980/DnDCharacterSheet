@@ -3,23 +3,31 @@
     <h4>Abilities</h4>
   </div>
 </div>
+<% if character_editable?(@character) %>
+  <div class= "row">
+    Dice Roll <%= link_to "Roll Again", character_path(@character) %>
+    <% @ability_scores.each do |score| %>
+      <%= score %>
+    <% end %>
+  </div>
+<% end %>
 <div class="row">
   <div class="col-md-2">
-    Strength: <%= best_in_place_if character_editable?(@character), @character, :strength%>
+    Strength: <%= best_in_place_if character_editable?(@character), @character, :strength, type: :input %>
   </div>
   <div class="col-md-2">
-    Dexterity: <%= best_in_place_if character_editable?(@character), @character, :dexterity %>
+    Dexterity: <%= best_in_place_if character_editable?(@character), @character, :dexterity, type: :input  %>
   </div>
   <div class="col-md-2">
-    Constitution: <%= best_in_place_if character_editable?(@character), @character, :constitution %>
+    Constitution: <%= best_in_place_if character_editable?(@character), @character, :constitution, type: :input  %>
   </div>
   <div class="col-md-2">
-    Intelligence: <%= best_in_place_if character_editable?(@character), @character, :intelligence %>
+    Intelligence: <%= best_in_place_if character_editable?(@character), @character, :intelligence, type: :input  %>
   </div>
   <div class="col-md-2">
-    Wisdom: <%= best_in_place_if character_editable?(@character), @character, :wisdom %>
+    Wisdom: <%= best_in_place_if character_editable?(@character), @character, :wisdom, type: :input  %>
   </div>
   <div class="col-md-2">
-    Strength: <%= best_in_place_if character_editable?(@character), @character, :charisma %>
+    Strength: <%= best_in_place_if character_editable?(@character), @character, :charisma, type: :input  %>
   </div>
 </div>
