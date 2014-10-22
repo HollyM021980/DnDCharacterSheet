@@ -1,4 +1,4 @@
-class AllCharacterRaces
+module AllCharacterRaces
 
   RACES = {
           "Human" =>    {
@@ -38,10 +38,6 @@ class AllCharacterRaces
                           favored_class: "Rogue"
                         }
         }
-
-  def initialize(race)
-    @character_race = race
-  end
 
   def assemble_race_names
     race_names = []
