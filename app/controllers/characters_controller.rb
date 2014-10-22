@@ -3,13 +3,17 @@ class CharactersController < ApplicationController
   include AllCharacterRaces
   include AllCharacterClasses
 
-  before_action :set_character, only: [:edit, :show, :update ]
+  before_action :set_character, only: [:edit, :show, :update, :destroy]
 
   def index
     @characters = Character.where("user_id = ?", current_user)
   end
 
   def show
+  end
+
+  def new
+    @student = Character.new
   end
 
   def create

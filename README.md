@@ -143,8 +143,8 @@ The User can be either a player or an admin.  Fields;
 - [X] Modify character listing so doesn't allow inline editing (maybe unless it belongs to them - concern on welcome index page).
 - [X] Add editable character sheet fields to the view/edit page
 - [] Convert remaining non-db models to db-based models
-  - [] Class
-  - [] Dwarf (race too??)
+  - [X] Class
+  - [X] Dwarf (race too??)
 - [] Define and add validations as needed
 - [X] Add unstyled listing page elements, reusable for "My character sheets"
   - [X] N/A, was able to inline based on current user login - Each character sheet listed will only contain viewing (non-edit mode) option

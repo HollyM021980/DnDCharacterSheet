@@ -1,5 +1,10 @@
-  <% if user_signed_in? %>
-    <%= render "shared/character_list" %>
-  <% else %>
-    <strong><p>Clever creature!  You managed to find this page without being logged in.  But I can't do anything until you do.  So please either log in or sign up!!</p></strong>
-  <% end %>
+<div class= "row">
+  <div class="col-md-3">
+    <h4>Character Sheet Listing</h4>
+  </div>
+</div>
+<% if user_signed_in? %>
+  <%= render "shared/character_list" %>
+<% else %>
+  <strong><p>Clever creature!  You managed to find this page without being logged in.  But I can't do anything until you do.  So please either log in or sign up!!</p></strong>
+<% end %>

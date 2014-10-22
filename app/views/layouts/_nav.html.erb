@@ -17,7 +17,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to 'Home', root_path %></li>
-            <li><%= (link_to 'My Character Sheets', characters_path) if user_signed_in? %></li>
+            <li><%= (link_to 'My Characters', characters_path) if user_signed_in? %></li>
+            <li><%= (link_to 'New Character', new_character_path(current_user)) if user_signed_in? %></li>
           </ul>
           <p class="navbar-text pull-right">
           <%= render 'shared/login_items' %>
