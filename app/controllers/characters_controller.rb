@@ -1,5 +1,6 @@
 class CharactersController < ApplicationController
   include DiceRoll
+  include AllCharacterRaces
 
   before_action :set_character, only: [:edit, :show, :update ]
 

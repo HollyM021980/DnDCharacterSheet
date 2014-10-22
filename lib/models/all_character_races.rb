@@ -1,4 +1,4 @@
-class CharacterRace
+class AllCharacterRaces
 
   RACES = {
           "Human" =>    {

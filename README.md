@@ -146,10 +146,10 @@ The User can be either a player or an admin.  Fields;
   - [] Class
   - [] Dwarf (race too??)
 - [] Define and add validations as needed
-- [] Add unstyled listing page elements, reusable for "My character sheets"
-  - [] Each character sheet listed will only contain viewing (non-edit mode) option
-  - [] Add "My character sheets" navigation element to user-specific unstyled listing page
-  - [] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
+- [X] Add unstyled listing page elements, reusable for "My character sheets"
+  - [X] N/A, was able to inline based on current user login - Each character sheet listed will only contain viewing (non-edit mode) option
+  - [X] Add "My character sheets" navigation element to user-specific unstyled listing page
+  - [X] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
 - [] Add fields to character sheet listing index pages (Class name, Race name)
 - [] Add scss to allow use of the custom font
 - [] Style listing page & non-edit viewing page

@@ -6,7 +6,7 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :gender
       t.integer :level
       t.boolean :public_flag
-      t.belongs_to :user, index: true
+      t.belongs_to :user, index: true, null: false
 
       t.timestamps null: false
     end
