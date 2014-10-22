@@ -6,12 +6,15 @@
         <% end %>
       </div>
       <div class="col-md-2">
+        Race
+      </div>
+      <div class="col-md-3">
         Name
       </div>
       <div class="col-md-1">
         Age
       </div>
-      <div class="col-md-2">
+      <div class="col-md-1">
         Gender
       </div>
 <%
@@ -21,7 +24,7 @@
       </div>
 <%
 =end %>
-      <div class="col-md-2">
+      <div class="col-md-1">
         Public?
       </div>
       <div class="col-md-2">
@@ -36,12 +39,15 @@
         <% end %>
       </div>
       <div class="col-md-2">
+        <%= best_in_place_if character_editable?(character), character, :race %>
+      </div>
+      <div class="col-md-3">
         <%= best_in_place_if character_editable?(character), character, :name %>
       </div>
       <div class="col-md-1">
         <%= best_in_place_if character_editable?(character), character, :age %>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-1">
         <%= best_in_place_if character_editable?(character), character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
       </div>
 <%
@@ -51,7 +57,7 @@
       </div>
 <%
 =end %>
-      <div class="col-md-2">
+      <div class="col-md-1">
         <%= best_in_place_if character_editable?(character), character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
       </div>
       <div class="col-md-2">

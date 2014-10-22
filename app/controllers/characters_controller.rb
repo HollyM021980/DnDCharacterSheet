@@ -55,7 +55,7 @@ class CharactersController < ApplicationController
   end
 
   def character_params
-    params.require(:character).permit(:name, :age, :gender, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :created_at)
+    params.require(:character).permit(:race, :name, :age, :gender, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :created_at)
   end
 
   def roll_for_ability_scores
