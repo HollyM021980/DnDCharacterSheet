@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
 
   def index
     @characters = Character.where("user_id = ?", current_user)
-    @character_classes = @characters.character_classes
   end
 
   def show

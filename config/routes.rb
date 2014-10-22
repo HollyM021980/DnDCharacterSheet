@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'welcome/license'
 
   resources :characters
+  resources :character_classes
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
