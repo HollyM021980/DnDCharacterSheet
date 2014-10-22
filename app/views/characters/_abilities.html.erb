@@ -5,21 +5,21 @@
 </div>
 <div class="row">
   <div class="col-md-2">
-    Strength: <%= @character.strength%>
+    Strength: <%= best_in_place_if character_editable?(@character), @character, :strength%>
   </div>
   <div class="col-md-2">
-    Dexterity: <%= @character.dexterity %>
+    Dexterity: <%= best_in_place_if character_editable?(@character), @character, :dexterity %>
   </div>
   <div class="col-md-2">
-    Constitution: <%= @character.constitution %>
+    Constitution: <%= best_in_place_if character_editable?(@character), @character, :constitution %>
   </div>
   <div class="col-md-2">
-    Intelligence: <%= @character.intelligence %>
+    Intelligence: <%= best_in_place_if character_editable?(@character), @character, :intelligence %>
   </div>
   <div class="col-md-2">
-    Wisdom: <%= @character.wisdom %>
+    Wisdom: <%= best_in_place_if character_editable?(@character), @character, :wisdom %>
   </div>
   <div class="col-md-2">
-    Strength: <%= @character.charisma %>
+    Strength: <%= best_in_place_if character_editable?(@character), @character, :charisma %>
   </div>
 </div>

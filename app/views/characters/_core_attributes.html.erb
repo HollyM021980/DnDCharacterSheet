@@ -5,18 +5,35 @@
 </div>
 <div class="row">
   <div class="col-md-2">
-    Name: <%= best_in_place_if character_editable?(@character), @character, :name %>
+    Name
   </div>
   <div class="col-md-2">
-    Age: <%= best_in_place_if character_editable?(@character), @character, :age %>
+    Age
   </div>
   <div class="col-md-2">
-    Gender: <%= best_in_place_if character_editable?(@character), @character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
+    Gender
   </div>
   <div class="col-md-2">
-    Level: <%= best_in_place_if character_editable?(@character), @character, :level %>
+    Level
   </div>
   <div class="col-md-2">
-    Public? <%= best_in_place_if character_editable?(@character), @character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
+    Public?
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <%= best_in_place_if character_editable?(@character), @character, :name %>
+  </div>
+  <div class="col-md-2">
+    <%= best_in_place_if character_editable?(@character), @character, :age %>
+  </div>
+  <div class="col-md-2">
+    <%= best_in_place_if character_editable?(@character), @character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
+  </div>
+  <div class="col-md-2">
+    <%= best_in_place_if character_editable?(@character), @character, :level %>
+  </div>
+  <div class="col-md-2">
+    <%= best_in_place_if character_editable?(@character), @character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
   </div>
 </div>

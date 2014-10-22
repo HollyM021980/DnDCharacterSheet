@@ -1,4 +1,6 @@
 class CharactersController < ApplicationController
+  include DiceRoll
+
   before_action :set_character, only: [:edit, :show, :update ]
 
   def index
@@ -6,7 +8,10 @@ class CharactersController < ApplicationController
   end
 
   def show
+    @ability_scores = []
+    6.times { @ability_scores << DiceRoll.ability_dice_roll }
   end
+
 
   private
   def set_character

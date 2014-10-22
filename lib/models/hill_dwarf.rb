@@ -1,3 +1,0 @@
-class HillDwarf < Dwarf
-
-end

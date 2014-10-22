@@ -1,4 +1,4 @@
-class Weapon
+class AllWeapons
 
   WEAPONS = {
     "Simple Melee Weapons" => {

@@ -1,25 +1,50 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <% @characters.each do |character| %>
       <div class="col-md-2">
         <% if user_signed_in? %>
-            <%= "Mine? " + ((character.user_id == current_user.id) ? "Yes" : "No") %>
+            Mine?
         <% end %>
       </div>
       <div class="col-md-2">
-        Name: <%= best_in_place_if character_editable?(character), character, :name %>
+        Name
       </div>
       <div class="col-md-1">
-        Age: <%= best_in_place_if character_editable?(character), character, :age %>
+        Age
       </div>
       <div class="col-md-2">
-        Gender: <%= best_in_place_if character_editable?(character), character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
+        Gender
       </div>
       <div class="col-md-1">
-        Level: <%= best_in_place_if character_editable?(character), character, :level %>
+        Level
       </div>
       <div class="col-md-2">
-        Public? <%= best_in_place_if character_editable?(character), character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
+        Public?
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+    <% @characters.each do |character| %>
+      <div class="col-md-2">
+        <% if user_signed_in? %>
+            <%= (character.user_id == current_user.id) ? "Yes" : "No" %>
+        <% end %>
+      </div>
+      <div class="col-md-2">
+        <%= best_in_place_if character_editable?(character), character, :name %>
+      </div>
+      <div class="col-md-1">
+        <%= best_in_place_if character_editable?(character), character, :age %>
+      </div>
+      <div class="col-md-2">
+        <%= best_in_place_if character_editable?(character), character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
+      </div>
+      <div class="col-md-1">
+        <%= best_in_place_if character_editable?(character), character, :level %>
+      </div>
+      <div class="col-md-2">
+        <%= best_in_place_if character_editable?(character), character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
       </div>
       <div class="col-md-2">
         <%= link_to "Full Sheet", character_path(character) %>
