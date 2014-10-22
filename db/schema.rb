@@ -11,25 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022153323) do
+ActiveRecord::Schema.define(version: 20141022174927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "character_races", force: true do |t|
-    t.string   "name",         null: false
+  create_table "character_classes", force: true do |t|
+    t.string   "class_name",   null: false
+    t.integer  "level",        null: false
     t.integer  "character_id", null: false
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
 
-  add_index "character_races", ["character_id"], name: "index_character_races_on_character_id", using: :btree
+  add_index "character_classes", ["character_id"], name: "index_character_classes_on_character_id", using: :btree
 
   create_table "characters", force: true do |t|
+    t.string   "race"
     t.string   "name"
     t.integer  "age"
     t.string   "gender"
-    t.integer  "level"
     t.boolean  "public_flag"
     t.integer  "user_id",      null: false
     t.datetime "created_at",   null: false

@@ -1,5 +1,7 @@
 class CharactersController < ApplicationController
   include DiceRoll
+  include AllCharacterRaces
+  include AllCharacterClasses
 
   before_action :set_character, only: [:edit, :show, :update ]
 
@@ -48,12 +50,12 @@ class CharactersController < ApplicationController
   private
   def set_character
     @character = Character.find(params[:id])
-    @character_race = @character.character_race
+    # @character_classes = @character.character_classes
     @ability_scores = roll_for_ability_scores
   end
 
   def character_params
-    params.require(:character).permit(:name, :age, :gender, :level, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :character_races_id, :created_at)
+    params.require(:character).permit(:name, :age, :gender, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :created_at)
   end
 
   def roll_for_ability_scores

@@ -1,4 +1,4 @@
-class AllCharacterClasses
+module AllCharacterClasses
 
   ABILITY_DEFAULTS = {}
 
@@ -53,9 +53,6 @@ class AllCharacterClasses
   }
 
 
-  def initialize(name)
-    @character_class = name
-  end
 
   # Input:  none
   # Return: Array of class name strings

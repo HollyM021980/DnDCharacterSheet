@@ -14,9 +14,13 @@
       <div class="col-md-2">
         Gender
       </div>
+<%
+=begin %>
       <div class="col-md-1">
         Level
       </div>
+<%
+=end %>
       <div class="col-md-2">
         Public?
       </div>
@@ -40,9 +44,13 @@
       <div class="col-md-2">
         <%= best_in_place_if character_editable?(character), character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
       </div>
+<%
+=begin %>
       <div class="col-md-1">
         <%= best_in_place_if character_editable?(character), character, :level %>
       </div>
+<%
+=end %>
       <div class="col-md-2">
         <%= best_in_place_if character_editable?(character), character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
       </div>
