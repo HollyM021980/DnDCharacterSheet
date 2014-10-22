@@ -7,5 +7,6 @@ class CreateCharacterClasses < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :character_classes, [:character_id, :class_name, :level], :name => 'ind_chclass_on_ch_id_and_chname_and_level', :unique=>true
   end
 end

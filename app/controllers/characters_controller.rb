@@ -7,6 +7,7 @@ class CharactersController < ApplicationController
 
   def index
     @characters = Character.where("user_id = ?", current_user)
+    @character_classes = @characters.character_classes
   end
 
   def show
@@ -50,7 +51,7 @@ class CharactersController < ApplicationController
   private
   def set_character
     @character = Character.find(params[:id])
-    # @character_classes = @character.character_classes
+    @character_classes = @character.character_classes
     @ability_scores = roll_for_ability_scores
   end
 

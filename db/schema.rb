@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20141022174927) do
     t.datetime "updated_at",   null: false
   end
 
+  add_index "character_classes", ["character_id", "class_name", "level"], name: "ind_chclass_on_ch_id_and_chname_and_level", unique: true, using: :btree
   add_index "character_classes", ["character_id"], name: "index_character_classes_on_character_id", using: :btree
 
   create_table "characters", force: true do |t|
