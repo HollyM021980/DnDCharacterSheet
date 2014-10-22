@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h4 class="notice-heading"><%= "This is someone else's property (look, don't touch)..." if @character.user.id != current_user.id %></h4>
+  <h4 class="notice-heading"><%= "This is someone else's property (look, don't touch)..." if @character.user.id != current_user %></h4>
   <%= render "core_attributes", locals: {character: @character} %>
   <hr>
   <%= render "abilities", locals: {character: @character, ability_scores: @ability_scores} %>
