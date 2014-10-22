@@ -8,7 +8,6 @@ class CharactersController < ApplicationController
   end
 
   def show
-    @ability_scores = roll_for_ability_scores
   end
 
   def create
@@ -49,10 +48,12 @@ class CharactersController < ApplicationController
   private
   def set_character
     @character = Character.find(params[:id])
+    @character_race = @character.character_race
+    @ability_scores = roll_for_ability_scores
   end
 
   def character_params
-    params.require(:character).permit(:name, :age, :gender, :level, :user_id, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :created_at, :public_flag, :category_id)
+    params.require(:character).permit(:name, :age, :gender, :level, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :character_races_id, :created_at)
   end
 
   def roll_for_ability_scores
