@@ -1,5 +1,6 @@
 class CharacterClassesController < ApplicationController
-  before_action character_class_params, only: [:show, :edit, :update, :destroy]
+  # before_action character_class_params, only: [:show, :edit, :update, :destroy]
+
 
   def create
     @character_classes = CharacterClasses.create(character_class_params)
