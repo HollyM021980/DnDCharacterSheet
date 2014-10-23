@@ -17,13 +17,6 @@
     <div class="col-md-2">
       Gender
     </div>
-<%
-=begin %>
-    <div class="col-md-2">
-      Level
-    </div>
-<%
-=end %>
     <div class="col-md-2">
       Public?
     </div>
@@ -41,16 +34,6 @@
     <div class="col-md-2">
       <%= best_in_place_if character_editable?(@character), @character, :gender, type: :select, :collection => [["Male", "Male"], ["Female", "Female"], ["", "Unspecified"]]%>
     </div>
-<%
-=begin %>
-    <div class="col-md-2">
-      <%= best_in_place_if character_editable?(@character), @character, :level %>
-    </div>
-    <div class="col-md-2">
-      <%= best_in_place student.house, :id, type: :select, collection: AllCharacterRaces.assemble_race_names.map { |cr| cr.name]} %></td>
-    </div>
-<%
-=end %>
     <div class="col-md-2">
       <%= best_in_place_if character_editable?(@character), @character, :public_flag, type: :select, :collection => [[false, "No"], [true, "Yes"]] %>
     </div>
