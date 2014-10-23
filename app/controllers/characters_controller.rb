@@ -12,14 +12,14 @@ class CharactersController < ApplicationController
   def show
   end
 
+
   def new
-    @student = Character.new
+    @character = Character.new
+    @character.character_classes.build
   end
 
   def create
-    @character = Character.new(character_params)
-    @character.user = current_user
-
+    @character = Character.new(new_character_params)
     respond_to do |format|
       if @character.save
         format.html { redirect_to @character, notice: 'Character was successfully created.' }
@@ -30,6 +30,25 @@ class CharactersController < ApplicationController
       end
     end
   end
+
+  # def new
+  #   @character = Character.new
+  # end
+
+  # def create
+  #   @character = Character.new(character_params)
+  #   @character.user = current_user
+
+  #   respond_to do |format|
+  #     if @character.save
+  #       format.html { redirect_to @character, notice: 'Character was successfully created.' }
+  #       format.json { respond_with_bip(@character) }
+  #     else
+  #       format.html { render :show }
+  #       format.json { respond_with_bip(@character) }
+  #     end
+  #   end
+  # end
 
   def update
     respond_to do |format|
@@ -59,7 +78,10 @@ class CharactersController < ApplicationController
   end
 
   def character_params
-    params.require(:character).permit(:race, :name, :age, :gender, :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence, :public_flag, :user_id, :created_at)
+    binding.pry
+    params.require(:character).permit(:race, :name, :age, :gender, :public_flag, :user_id, :created_at,
+                                      :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence,
+                                      character_class_attributes: [ :id, :class_name, :level, '_destroy' ])
   end
 
   def roll_for_ability_scores

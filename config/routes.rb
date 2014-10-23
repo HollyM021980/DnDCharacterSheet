@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :characters
   resources :character_classes
 
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
