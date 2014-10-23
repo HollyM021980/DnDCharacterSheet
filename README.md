@@ -142,7 +142,7 @@ The User can be either a player or an admin.  Fields;
   - [X] Both of the above will navigate to a characater "show page"
 - [X] Modify character listing so doesn't allow inline editing (maybe unless it belongs to them - concern on welcome index page).
 - [X] Add editable character sheet fields to the view/edit page
-- [] Convert remaining non-db models to db-based models
+- [X] Convert remaining non-db models to db-based models
   - [X] Class
   - [X] Dwarf (race too??)
 - [] Define and add validations as needed
@@ -150,11 +150,11 @@ The User can be either a player or an admin.  Fields;
   - [X] N/A, was able to inline based on current user login - Each character sheet listed will only contain viewing (non-edit mode) option
   - [X] Add "My character sheets" navigation element to user-specific unstyled listing page
   - [X] Add Non-edit character sheet viewing page with "back navigation" (sub-nav??)
-- [] Add fields to character sheet listing index pages (Class name, Race name)
+- [X] Add fields to character sheet listing index pages (Class name, Race name)
 - [] Add scss to allow use of the custom font
-- [] Style listing page & non-edit viewing page
-- [] Add edit character page
+- [X] Style listing page & non-edit viewing page
 - [] Add New character navigation & base functionality
+  - [X] Add "New" navigation element
   - [] Creates new character sheet on edit page
   - [] Implement restrictions and appropriate validation and error messaging as character is defined (Race before Class before etc..)
 - [] Style edit page
@@ -165,8 +165,9 @@ The User can be either a player or an admin.  Fields;
 - [] Add admin flag to User model
 
 ## If have time
-- [] More tests!!
+- [] More tests & validations!!
 - [] Expand data set
+- [] Research social avenue for DnD (twitter? other) and integrate api
 - [] Dice rolls within elements of the edit page
 - [] Add clone/copy ability
   - [] Copy sheet navigates to edit page
