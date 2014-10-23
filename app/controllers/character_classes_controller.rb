@@ -1,6 +1,5 @@
 class CharacterClassesController < ApplicationController
-  # before_action :set_character_class, only: [:show, :edit, :update, :destroy]
-  require 'pry-rails'
+  before_action character_class_params, only: [:show, :edit, :update, :destroy]
 
   def create
     @character_classes = CharacterClasses.create(character_class_params)
@@ -31,7 +30,6 @@ class CharacterClassesController < ApplicationController
 
   private
   def character_class_params
-    binding.pry
     params.require(:character_class).permit(:class_name, :level, :character_id)
   end
 

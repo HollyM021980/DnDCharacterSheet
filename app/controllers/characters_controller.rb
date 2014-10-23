@@ -78,7 +78,6 @@ class CharactersController < ApplicationController
   end
 
   def character_params
-    binding.pry
     params.require(:character).permit(:race, :name, :age, :gender, :public_flag, :user_id, :created_at,
                                       :strength, :wisdom, :charisma, :dexterity, :constitution, :intelligence,
                                       character_class_attributes: [ :id, :class_name, :level, '_destroy' ])
